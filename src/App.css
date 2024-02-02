@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Protest+Revolution&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #e6ffa1; 
+}
+.container{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container h1{
+    text-transform: uppercase;
+   margin: 1.2rem auto;
+    font-size: 2.442rem;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    line-height: 1rem;
+    color: rgb(45, 78, 14);
+    font-family: 'Protest Revolution', sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container .main-btn{
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    background-color: #fff;
+    border:1px solid #000;
+    color:#000;
+    margin: .7rem 0;
+    padding: .5375rem 1.45rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
 }
-
-.App-link {
-  color: #61dafb;
+.container .main-btn:hover{
+    background-color: #000;
+    color:#fff;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container .card
+{
+    width: 22rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    background-color: rgb(223, 255, 107);
+}
+.container .card .card-header p{
+    text-transform: capitalize;
+    font-size: 1.453rem;
+    font-weight: 700;
+}
+.container .card .card-body p{
+    font-size: 1.1124rem;
+    font-weight: 600;
+    color:#7a7575;
+}
+.container .card span{
+    color: #6d6666;
+    font-weight: 700;
+    font-size: 1.358rem;
+    text-transform: capitalize;
 }
